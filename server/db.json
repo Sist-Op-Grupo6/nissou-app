@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Anillos"
+    },
+    {
+      "id": 2,
+      "name": "Aretes"
+    },
+    {
+      "id": 3,
+      "name": "Collares"
+    },
+    {
+      "id": 4,
+      "name": "Pulseras"
+    },
+    {
+      "id": 5,
+      "name": "Puñeras"
+    },
+    {
+      "id": 6,
+      "name": "Aros"
+    }
+  ]
+}
