@@ -1,0 +1,59 @@
+<main class="container mx-auto my-4 flex justify-center items-center">
+<div class="gap-4">
+  <div>
+    <h2 class="text-2xl font-medium">Productos de la categoría: {{ currentCategory?.name }}</h2>
+  </div>
+    <div>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> Id </th>
+          <td mat-cell *matCellDef="let product">
+            <a [routerLink]="['/products', product.id]">{{ product.id }}</a>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Nombre </th>
+          <td mat-cell *matCellDef="let product"> {{product.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef> Descripcion </th>
+          <td mat-cell *matCellDef="let product"> {{product.description}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="material">
+          <th mat-header-cell *matHeaderCellDef> Material </th>
+          <td mat-cell *matCellDef="let product"> {{product.material}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="unitPrice">
+          <th mat-header-cell *matHeaderCellDef> Precio </th>
+          <td mat-cell *matCellDef="let product"> {{product.unitPrice}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef> Acciones </th>
+          <td mat-cell *matCellDef="let product">
+            <button mat-icon-button (click)="deleteProduct(product.id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+            <button mat-icon-button (click)="openEditProduct(product.id)">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+      <div class="mb-4 p-4">
+        <button mat-raised-button color="primary" (click)="navigateToAddProduct()">Agregar Producto</button>
+      </div>
+
+    </div>
+  </div>
+</main>

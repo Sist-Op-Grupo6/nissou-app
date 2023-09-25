@@ -1,0 +1,38 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Arete"
+    },
+    {
+      "name": "Prueba",
+      "id": 2
+    },
+    {
+      "name": "Collar",
+      "id": 3
+    },
+    {
+      "name": "aerr",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Arete Gato",
+      "description": "ARETE GATO",
+      "material": "ORO Y PLATA",
+      "unitPrice": 250,
+      "categoryId": 2
+    },
+    {
+      "name": "dsad",
+      "description": "asdsad",
+      "material": "asdasd",
+      "unitPrice": 1212,
+      "categoryId": 1,
+      "id": 2
+    }
+  ]
+}
