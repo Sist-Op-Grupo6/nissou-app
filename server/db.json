@@ -1,28 +1,30 @@
 {
   "categories": [
     {
-      "id": 1,
-      "name": "Anillos"
+      "name": "Aretes",
+      "id": 1
     },
     {
       "id": 2,
-      "name": "Aretes"
+      "name": "Anillo"
     },
     {
-      "id": 3,
-      "name": "Collares"
+      "name": "Collar",
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "Pulseras"
-    },
+      "name": "Pulsera",
+      "id": 4
+    }
+  ],
+  "products": [
     {
-      "id": 5,
-      "name": "Puñeras"
-    },
-    {
-      "id": 6,
-      "name": "Aros"
+      "id": 1,
+      "name": "Arete Gato",
+      "description": "ARETE GATO",
+      "material": "ORO Y PLATA",
+      "unitPrice": 250,
+      "categoryId": 2
     }
   ]
 }

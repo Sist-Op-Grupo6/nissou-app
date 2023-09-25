@@ -10,7 +10,7 @@ export class DataService<T> {
       'Content-type': 'application/json',
     })
   }
-  constructor(private http: HttpClient) { }
+  constructor(public http: HttpClient) { }
 
   handleError(error: HttpErrorResponse) {
     // Default error handling
@@ -49,4 +49,6 @@ export class DataService<T> {
       this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
+
+
 }
