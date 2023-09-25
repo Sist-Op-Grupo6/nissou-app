@@ -1,19 +1,19 @@
 {
   "categories": [
     {
-      "name": "Aretes",
-      "id": 1
+      "id": 1,
+      "name": "Arete"
     },
     {
-      "id": 2,
-      "name": "Anillo"
+      "name": "Prueba",
+      "id": 2
     },
     {
       "name": "Collar",
       "id": 3
     },
     {
-      "name": "Pulsera",
+      "name": "aerr",
       "id": 4
     }
   ],
@@ -25,6 +25,14 @@
       "material": "ORO Y PLATA",
       "unitPrice": 250,
       "categoryId": 2
+    },
+    {
+      "name": "dsad",
+      "description": "asdsad",
+      "material": "asdasd",
+      "unitPrice": 1212,
+      "categoryId": 1,
+      "id": 2
     }
   ]
 }

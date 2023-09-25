@@ -18,4 +18,9 @@ export class ProductService extends DataService<Product>{
       .pipe(retry(2), catchError(this.handleError));
   }
 
+  getProductById(productId: number): Observable<any> {
+    const url = `${this.basePath}/${productId}`;
+    return this.http.get(url);
+  }
+
 }

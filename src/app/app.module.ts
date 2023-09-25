@@ -27,6 +27,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from "@angular/forms";
 import {ReactiveFormsModule} from "@angular/forms";
+import {MatCardModule} from "@angular/material/card";
+import { EditProductComponent } from './edit-product/edit-product.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     ProductListComponent,
     ProductDetailComponent,
     EditCategoryComponent,
+    EditProductComponent,
+    AddProductComponent,
   ],
   imports: [
     HttpClientModule,
@@ -51,7 +56,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

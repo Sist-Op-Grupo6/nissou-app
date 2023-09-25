@@ -1,5 +1,5 @@
 import {Component, OnInit, TemplateRef, ViewChild} from '@angular/core';
-import { CategoryService } from "../shared/services/category.service";
+import {CategoryService} from "../shared/services/category.service";
 import {MatTableDataSource} from "@angular/material/table";
 import {Category} from "../shared/models/category";
 import { Router } from '@angular/router';
@@ -41,8 +41,6 @@ export class CategoryListComponent {
     });
   }
 
-  editCategory(category: Category) {
-  }
   dataSource: any;
 
   categories: any = [];

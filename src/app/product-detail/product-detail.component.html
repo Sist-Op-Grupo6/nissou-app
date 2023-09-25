@@ -1,1 +1,13 @@
-<p>product-detail works!</p>
+<div class="flex justify-center items-center h-screen">
+  <mat-card class="w-64 border rounded-lg shadow-md p-4">
+    <mat-card-header>
+      <mat-card-title class="text-xl font-bold">{{ product.name }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p class="text-sm"><strong>Descripción:</strong> {{ product.description }}</p>
+      <p class="text-sm"><strong>Material:</strong> {{ product.material }}</p>
+      <p class="text-sm"><strong>Precio Unitario:</strong> ${{ product.unitPrice }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+

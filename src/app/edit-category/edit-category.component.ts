@@ -39,7 +39,6 @@ export class EditCategoryComponent implements OnInit {
     }
   }
 
-  // Maneja la actualización de la categoría
   updateCategory(): void {
     if (this.editCategoryForm.valid) {
       const newName = this.editCategoryForm.value.newCategoryName;
