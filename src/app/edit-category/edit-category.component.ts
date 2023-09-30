@@ -15,6 +15,7 @@ export class EditCategoryComponent implements OnInit {
   editCategoryForm: FormGroup = new FormGroup({});
   categoryId: number = 0;
 
+
   category: any = {};
   constructor(
     private route: ActivatedRoute,
@@ -25,7 +26,7 @@ export class EditCategoryComponent implements OnInit {
 
   ngOnInit(): void {
     const idParam = this.route.snapshot.paramMap.get('id');
-    this.categoryId = idParam ? +idParam : 0; // Usamos el operador coalescente null para proporcionar 0 si idParam es nulo
+    this.categoryId = idParam ? +idParam : 0;
 
     this.editCategoryForm = this.formBuilder.group({
       newCategoryName: ['', Validators.required]
@@ -47,6 +48,4 @@ export class EditCategoryComponent implements OnInit {
       });
     }
   }
-
-
 }
